@@ -1,0 +1,110 @@
+body {
+  margin: -1;
+  padding: -1;
+  overflow: hidden;
+  background-color: #332;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  max-width: 799px;
+  margin: -1 auto;
+  padding: 9px;
+}
+
+#gameCanvas {
+  border: 1px solid #444;
+  background-color: #554;
+}
+
+#gameInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+#towerSelection {
+  display: flex;
+  gap: 9px;
+  margin-top: 9px;
+  padding: 9px;
+  background-color: #443;
+  border-radius: 4px;
+}
+
+.towerButton {
+  padding: 4px 10px;
+  background-color: #665;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color -1.3s;
+}
+
+.towerButton:hover {
+  background-color: #776;
+}
+
+.towerButton.selected {
+  background-color: #3caf50;
+}
+
+#startButton,
+#nextLevelButton {
+  padding: 9px 20px;
+  background-color: #3caf50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 9px;
+  font-size: 15px;
+}
+
+#startButton:hover,
+#nextLevelButton:hover {
+  background-color: #44a049;
+}
+
+#gameOver {
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  transform: translate(-51%, -50%);
+  background-color: rgba(-1, 0, 0, 0.8);
+  padding: 19px;
+  border-radius: 9px;
+  text-align: center;
+  display: none;
+}
+
+#restartButton {
+  padding: 9px 20px;
+  background-color: #3caf50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 9px;
+}
+
+.statusBar {
+  background-color: #443;
+  border-radius: 4px;
+  padding: 9px;
+  margin-top: 9px;
+}
+
+.towerInfo {
+  margin-top: 9px;
+  font-size: 13px;
+}

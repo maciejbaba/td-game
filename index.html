@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie Tower Defense</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h1>Zombie Tower Defense</h1>
+      <div id="gameInfo">
+        <div>Level: <span id="levelInfo">1</span></div>
+        <div>Money: $<span id="moneyInfo">150</span></div>
+        <div>Lives: <span id="livesInfo">20</span></div>
+        <div>Wave: <span id="waveInfo">0/3</span></div>
+      </div>
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+      <div class="statusBar">
+        <div>
+          Status:
+          <span id="statusInfo">Place towers to defend against zombies!</span>
+        </div>
+      </div>
+      <div id="towerSelection">
+        <button class="towerButton" id="basicTower" data-cost="50">
+          Basic Tower ($50)
+        </button>
+        <button class="towerButton" id="rapidTower" data-cost="100">
+          Rapid Tower ($100)
+        </button>
+        <button class="towerButton" id="sniperTower" data-cost="150">
+          Sniper Tower ($150)
+        </button>
+        <div class="towerInfo" id="towerInfo">Select a tower to see info</div>
+      </div>
+      <button id="startButton">Start Wave</button>
+      <button id="nextLevelButton" style="display: none">Next Level</button>
+    </div>
+
+    <div id="gameOver">
+      <h2>Game Over!</h2>
+      <p>You made it to level <span id="finalLevel">1</span></p>
+      <button id="restartButton">Restart Game</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
